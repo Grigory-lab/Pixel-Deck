@@ -1,0 +1,112 @@
+.auth-bg {
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("img/Brick.png") center/cover no-repeat;
+}
+
+.auth-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.auth-container h1 {
+    color: #ff4d4d;
+    font-size: 14px;
+    font-weight: 5;
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 420px;
+    margin: auto;
+}
+
+.form-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 100%;
+    height: 100%;
+    background: #2b3a7a;
+    z-index: 0;
+}
+
+.auth-form {
+    position: relative;
+    z-index: 1;
+    background: #1f2a5a;
+    padding: 50px;
+}
+
+.auth-form input,
+.auth-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 4px solid #6a4bff;
+    color: white;
+    font-size: 10px;
+    font-family: 'Smartie';
+    height: 45px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    appearance: none;
+    background-color: #1f2a5a;
+}
+
+.select-wrapper select option {
+    color: rgb(186, 186, 186);
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    background: url("img/arrow_down.png") no-repeat center/contain;
+    transform: translateY(-100%);
+    pointer-events: none;
+}
+
+.auth-form button {
+    font-family: 'Smartie';
+    position: relative;
+    border: none;
+    padding: 14px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 10px;
+    z-index: 1;
+}
+
+.auth-form button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #B43737;
+    z-index: -1;
+}
+
+.auth-form button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #672C2C;
+    transform: translate(8px, 8px);
+    z-index: -2;
+}
+
+.rc {
+    margin-bottom: 20px;
+}

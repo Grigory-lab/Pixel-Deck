@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Smartie';
+    src: url('fonts/LCDSmartieV2-Regular.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    color: #fff;
+    background-color: #131B4D;
+    font-family: 'Smartie';
+    font-weight: 5;
+}
+
+/* Шапка */
+.header {
+    background: #162440;
+    border-bottom: 6px solid #533483;
+    padding: 25px 40px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ff4d4d;
+    font-size: 14px;
+}
+
+.menu a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #533483;
+    padding: 10px 14px;
+    font-size: 10px;
+}
+
+.menu img {
+    height: 20px;
+}
+
+.title{
+	word-break: break-word;
+	overflow-wrap: break-word;
+}
+
+.modal-box h4{
+	word-break: break-word;
+	overflow-wrap: break-word;
+}
+
+.modal-desc{
+	word-break: break-word;
+	overflow-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.author{
+	word-break: break-word;
+	overflow-wrap: break-word;
+}
