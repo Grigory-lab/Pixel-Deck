@@ -67,16 +67,16 @@
 
 <script>
 function validate(login,email){
-	let loginReg = /^[a-zA-Z0-9_]{1,20}$/;
-	let emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	let loginReg = /^[a-zA-Zа-яА-ЯёЁ0-9_]{1,20}$/u;
+	let emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/u;
 
 	if(!loginReg.test(login)){
-		alert("Неверный логин");
+		alert("Неподдерживаемый логин");
 		return false;
 	}
 
 	if(!emailReg.test(email)){
-		alert("Неверный email");
+		alert("Неподдерживаемый email");
 		return false;
 	}
 	return true;
